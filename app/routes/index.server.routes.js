@@ -2,7 +2,7 @@ module.exports = function(app) {
     var index = require ('../controllers/index.server.controller.js');
    // app.get('/',index.render);
     
-    app.route('/homepage').get(index.renderHomepage);
+    app.route('/').get(index.renderHomepage);
     
     app.route('/about').get(index.renderAbout);
     

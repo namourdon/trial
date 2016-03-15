@@ -10,6 +10,6 @@ module.exports = function (app) {
     app.route("/signin").get(users.renderSignin)
         .post(users.signin);
 
-    app.get('/signout', users.signout);
+    app.get('/index', users.signout);
 };
 

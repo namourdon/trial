@@ -31,7 +31,7 @@ exports.renderSignin = function(req, res, next) {
 		});
     } else {
 
-		return res.redirect('/homepage');
+		return res.redirect('/index');
 	}
 };
 
@@ -43,7 +43,7 @@ exports.renderSignup = function(req, res, next) {
              userFullName: req.user ? req.user.fullName: ''
 		});
 	} else {
-		return res.redirect('/homepage');
+		return res.redirect('/index');
 	}
 };
 
@@ -77,7 +77,7 @@ exports.signup = function(req, res, next) {
 			});
 		});
 	} else {
-		return res.redirect('/homepage');
+		return res.redirect('/index');
 	}
 };
 
@@ -103,7 +103,7 @@ exports.signin = function (req, res, next) {
 exports.signout = function(req, res) {
 	req.logout();
 
-	res.redirect('/homepage');
+	res.redirect('/index');
     
 
 };

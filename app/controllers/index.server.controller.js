@@ -3,7 +3,7 @@ var User = require('mongoose').model('User'),
 
 exports.renderHomepage = function(req, res)
 {
-    res.render('homepage', {
+    res.render('index', {
         title: 'Home', 
         userFullName: req.user ? req.user.fullName: ''
     });
